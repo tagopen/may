@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Главная страница</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <!-- Meta SEO - Description, Keywords, Title-->
+    <meta name="title" content="Главная страница"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <!-- Multilanguage localization-->
+    <link rel="alternate" href="/" hreflang="x-default"/>
+    <!-- Mobile viewport optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>
+    <!--[if IEMobile]><meta http-equiv='cleartype' content='on' /><![endif]-->
+    <!-- Replace favicon.ico and apple-touch-icon.png-->
+    <link rel="shortcut icon" type="image/png" href="img/logo/logo.png">
+    <link rel="apple-touch-icon" type="image/png" href="img/logo/logo.png">
+    <!-- Disables automatic  of possible phone numbers and address in Safari on iOS-->
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <!-- Microformats Open Graph-->
+    <meta property="og:title" content="Site name"/>
+    <meta property="og:site_name" content="Site name"/>
+    <meta property="og:description" content="Описание сайта"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:image" content="http://tagopen.com/may/img/logo/microformat.pngmicroformat.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:url" content="http://tagopen.com/may"/>
+    <!-- Microformats Twitter Cards-->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@flickr"/>
+    <meta name="twitter:title" content="My Site"/>
+    <meta name="twitter:description" content="My Site is cool"/>
+    <meta name="twitter:image" content="http://tagopen.com/may/img/logo/microformat.png"/>
+    <!-- build:css css/bundle.min.css-->
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font-Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 navbar__col"><a class="logo" href="/"> <img src="http://tagopen.com/may/img/logo/logo.png"></a></div>
+            <div class="col-xs-12 col-sm-4 navbar__col">
+              <div class="address"><i class="fa fa-map-marker address__icon"></i>
+                <div class="address__text">1 мая 17:00 <br> г.Днепр, "Sun Ray" </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 navbar__col">
+              <div class="contact"><i class="fa contact__ic"></i><a class="contact__number" href="tel:+380983150111"><i class="fa fa-phone contact__icon" aria-hidden="true"></i>098-315-01-11   </a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="video">
+                <iframe class="video__iframe" src="https://www.youtube.com/embed/B3gnq5dImsc?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                <div class="video__corner video__corner--1"></div>
+                <div class="video__corner video__corner--2"></div>
+                <div class="video__corner video__corner--3"></div>
+                <div class="video__corner video__corner--4"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 header__col">
+              <div class="header__form">
+                <div class="form__heading">Проведите 1 мая в кругу семьи, заводите деловые знакомства и просто отдыхайте, а вопрос еды и развлечений мы берем на себя!<i class="ic ic--arrow hidden-xs"></i></div>
+                <p class="form__subheading">Оставьте телефон и узнайте о всех деталях мероприятия от организаторов</p>
+                <form class="contactForm modal__form" method="post" action="./mail/mail.php">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                      <div class="row">
+                        <div class="form-group col-xs-12 col-md-6">
+                          <input class="form-control form__input form__name form__input--phone" aria-invalid="false" placeholder="Имя" required data-validation-required-message="Заполните поле корректно." name="name" type="text"><i class="fa fa-phone" aria-hidden="true">      </i>
+                        </div>
+                        <div class="form-group col-xs-12 col-md-6">
+                          <input class="form-control form__input form__phone form__input--phone" aria-invalid="false" placeholder="Телефон" required data-validation-required-message="Заполните поле корректно." name="phone" type="tel"><i class="fa fa-phone" aria-hidden="true">  </i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">   
+                      <div class="text-center">
+                        <button class="btn button button--size" name="form[навбар]" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Уточнить подробности и перезвонить мне</button>
+                        <p class="modal__subtext"> <i class="fa fa-lock" aria-hidden="true"></i> Гарантируем полную конфиденциальность ваших данных</p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_four"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_one"></div>
+        </div>
+      </div>
+    </div>
+    <!-- build:js js/bundle.min.js-->
+    <!--Modernizr JavaScript-->
+    <script src="js/modernizr-custom.js"></script>
+    <!-- jQuery-->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script src="js/bootstrap.js"></script>
+    <!-- Old browsers reject JavaScript-->
+    <script src="js/jquery.reject.js"></script>
+    <!-- Slick-Slider JavaScript-->
+    <script src="js/slick.js"></script>
+    <!-- Custom JavaScript-->
+    <script src="js/main.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>

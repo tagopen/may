@@ -1,0 +1,31 @@
+header.header
+  .container
+    .row
+      .col-xs-12.col-sm-6
+        .video
+          iframe.video__iframe(src="https://www.youtube.com/embed/B3gnq5dImsc?autoplay=1" frameborder="0" allowfullscreen)
+          .video__corner.video__corner--1
+          .video__corner.video__corner--2
+          .video__corner.video__corner--3
+          .video__corner.video__corner--4
+      .col-xs-12.col-sm-6.header__col
+        .header__form
+          .form__heading!= content.site.header.form.heading
+            i.ic.ic--arrow.hidden-xs
+          p.form__subheading!= content.site.header.form.subheading
+          form.contactForm.modal__form(method='post', action='./mail/mail.php')
+            .row
+              .col-xs-12.col-sm-10.col-sm-offset-1
+                .row
+                  .form-group.col-xs-12.col-md-6
+                    input.form-control.form__input.form__name.form__input--phone(aria-invalid='false', placeholder='Имя', required, data-validation-required-message='Заполните поле корректно.', name='name', type='text')
+                    i.fa.fa-phone(aria-hidden="true")       
+                  .form-group.col-xs-12.col-md-6
+                    input.form-control.form__input.form__phone.form__input--phone(aria-invalid='false', placeholder='Телефон', required, data-validation-required-message='Заполните поле корректно.', name='phone', type='tel')
+                    i.fa.fa-phone(aria-hidden="true")   
+              .col-xs-12.col-sm-10.col-sm-offset-1    
+                .text-center
+                  button.btn.button.button--size(name='form[навбар]', type='submit', data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...") Уточнить подробности и перезвонить мне
+                  p.modal__subtext 
+                    i.fa.fa-lock(aria-hidden="true")
+                    |  Гарантируем полную конфиденциальность ваших данных

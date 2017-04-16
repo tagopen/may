@@ -1,0 +1,16 @@
+nav.navbar
+  div.container
+    .row
+      .col-xs-12.col-sm-4.navbar__col
+        a.logo(href=content.site.nav.logo.href)  
+          img(src=content.site.hostname + "/img/logo/" + content.site.nav.logo.img.link, alt=content.site.nav.logo.alt)
+      .col-xs-12.col-sm-4.navbar__col
+        .address
+          i.fa.fa-map-marker.address__icon
+          .address__text!= content.site.nav.address.text
+      .col-xs-12.col-sm-4.navbar__col
+        .contact
+          i.fa.contact__ic
+          a.contact__number(href=content.site.nav.contact.href)
+            i.fa.fa-phone.contact__icon(aria-hidden="true")
+            | 098-315-01-11   

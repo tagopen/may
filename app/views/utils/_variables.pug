@@ -1,0 +1,69 @@
+- var page = {}
+- var hostname = "http://tagopen.com/may" //- site domen name
+
+- 
+  var content = 
+    {
+      site: {
+        hostname: hostname, //- site domen name
+        author: "Tagopen",
+        meta: {
+          charset: "utf-8",
+          favicon: "logo.png",
+          appleTouchIcon: "logo.png",
+          description: "",
+          keywords: "",
+          openGraph: {
+            title: "Site name",
+            siteName: "Site name",
+            description: "Описание сайта",
+            type: "website",
+            locale: "ru_RU",
+            image: "microformat.png",
+            imageType: "image/png",
+            url: hostname
+          },
+          twitter: {
+            card: "summary",
+            site: "@flickr",
+            title: "My Site",
+            description: "My Site is cool",
+            image: hostname + "/img/logo/microformat.png"
+          }
+        },
+        nav: {
+          logo: {
+            href: "/",
+            img: {
+              link: "logo.png",
+              alt: "Май кружит"
+            }
+          },
+          address: {
+            text: "1 мая 17:00 <br> г.Днепр, \"Sun Ray\" "
+          },
+          contact: {
+              href: "tel:+380983150111",
+              text: "098-315-01-11"
+          }
+        },
+        header: {
+          form: {
+            heading: "Проведите 1 мая в кругу семьи, заводите деловые знакомства и просто отдыхайте, а вопрос еды и развлечений мы берем на себя!",
+            subheading: "Оставьте телефон и узнайте о всех деталях мероприятия от организаторов"
+          }
+        },
+        success: {
+          heading: "Спасибо за заявку!<br>В ближайшее время с Вами свяжутся организаторы",
+          subheading: "Все изменения и новости по мероприятию вы найдете в нашей группе, <b>подписывайтесь</b>"
+        },
+      }, //- site
+      index: {
+        hostname: "index.html",
+        title: "Главная страница",
+      }, //- index
+      success: {
+        hostname: "success.html",
+        title: "Заявка принята",
+      }, //- success
+    }
