@@ -432,7 +432,7 @@ html {
   }
   .header {
     padding-top: 107px;
-    height: 100vh;
+    min-height: 100vh;
   }
   .form__heading, .form__subheading {
     padding: 0 30px;
@@ -482,7 +482,7 @@ html {
 
 @media only screen and (min-width: 992px) {
   .header {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 98px;
   }
   .header__col {
@@ -553,7 +553,7 @@ html {
 
 @media only screen and (min-width: 760px) {
   .content {
-    height: 100vh;
+    min-height: 100vh;
     padding: 107px 0 0;
   }
 }
